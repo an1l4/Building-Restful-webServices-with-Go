@@ -18,3 +18,5 @@ func main() {
 
 	r.Run(":8080") // Default listen and serve on 0.0.0.0:8080
 }
+
+curl -X POST \http://localhost:8000/v1/stations \-H 'cache-control: no-cache' \-H 'content-type: application/json' \-d '{"name":"Brooklyn", "opening_time":"8:12:00","closing_time":"18:23:00"}'
